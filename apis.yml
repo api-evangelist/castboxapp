@@ -1,7 +1,13 @@
 aid: castboxapp
-name: castboxapp
-description: castboxapp is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Castbox
+description: Castbox is a free cross-platform podcast and audio content platform that lets
+  listeners discover, stream, download, and manage millions of podcasts, audiobooks, and
+  radio shows across Apple iOS, Android, Amazon Alexa, Google Home, CarPlay, Android Auto,
+  and the web. Alongside its consumer listening apps, Castbox offers a "For Podcasters" suite
+  for creators to host, distribute, and monetize their shows. Surfaced as a portfolio company
+  of Qiming Venture Partners and added to the API Evangelist network, Castbox is a consumer
+  audio company that publishes no public developer API portal; this profile captures its
+  public identity, legal, and support surface.
 url: https://raw.githubusercontent.com/api-evangelist/castboxapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,30 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://s3.castbox.fm/app/castbox/static/images/logo_120.png
 tags:
 - Company
+- Podcasts
+- Audio
+- Media
+- Streaming
+- Podcasting
+- Content
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/castboxapp-domain-security.yml
 - type: Website
-  url: https://castboxapp.com
+  url: https://castbox.fm
+- type: Support
+  url: https://helpcenter.castbox.fm/portal/kb
+- type: TermsOfService
+  url: https://castbox.fm/termsofservice.html
+- type: PrivacyPolicy
+  url: https://castbox.fm/policy.html
+- type: Blog
+  url: https://castbox.fm/newsroom/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
